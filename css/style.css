@@ -116,7 +116,7 @@ a {
 }
 
 .main-nav a {
-  padding: 10px 11px;
+  padding: 10px 9px;
   border-radius: 6px;
   color: rgba(255, 255, 255, 0.88);
   font-size: 14px;
@@ -409,6 +409,7 @@ a {
 .timeline-card,
 .value-card,
 .achievement-card,
+.activity-card,
 .step-card {
   background: var(--white);
   border: 1px solid var(--line);
@@ -420,6 +421,7 @@ a {
 .timeline-card:hover,
 .value-card:hover,
 .achievement-card:hover,
+.activity-card:hover,
 .step-card:hover,
 .gallery-item:hover {
   transform: translateY(-4px);
@@ -440,6 +442,7 @@ a {
 .timeline-card h3,
 .value-card h3,
 .achievement-card h3,
+.activity-card h3,
 .step-card h3 {
   margin: 0 0 8px;
   font-family: var(--font-heading);
@@ -451,6 +454,7 @@ a {
 .timeline-card p,
 .value-card p,
 .achievement-card p,
+.activity-card p,
 .step-card p {
   margin: 0;
   color: var(--muted);
@@ -468,8 +472,15 @@ a {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
 .value-card,
 .achievement-card,
+.activity-card,
 .step-card {
   padding: 24px;
 }
@@ -488,6 +499,52 @@ a {
 
 .achievement-card {
   border-top: 4px solid var(--gold);
+}
+
+.activity-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+}
+
+.activity-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.activity-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.activity-date {
+  display: inline-flex;
+  align-self: flex-start;
+  margin-bottom: 12px;
+  padding: 5px 9px;
+  color: var(--red-dark);
+  background: #f7df85;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.activity-card a,
+.activity-source {
+  margin-top: auto;
+  padding-top: 14px;
+  color: var(--red);
+  font-weight: 800;
+}
+
+.activity-source {
+  display: inline-block;
+  color: var(--green-dark);
 }
 
 .gallery-grid {
@@ -708,6 +765,7 @@ a {
 
   .tradition-grid,
   .achievement-grid,
+  .activity-grid,
   .guide-grid,
   .gallery-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -744,6 +802,7 @@ a {
 
   .tradition-grid,
   .achievement-grid,
+  .activity-grid,
   .guide-grid,
   .gallery-grid,
   .footer-grid {

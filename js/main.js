@@ -40,23 +40,83 @@ const historyTimeline = [
 const achievements = [
   {
     title: "Thành tích trong giáo dục, đào tạo",
-    description: "Dữ liệu placeholder về kết quả giáo dục, đào tạo. Vui lòng cập nhật theo tư liệu chính thức."
+    description: "Duy trì hoạt động đào tạo quân sự và dân sự, tổ chức các lớp nhân viên quân y, y sĩ, điều dưỡng, dược và các ngành hậu cần theo nhiệm vụ được giao."
   },
   {
-    title: "Thành tích trong nghiên cứu khoa học",
-    description: "Dữ liệu placeholder về hoạt động nghiên cứu, sáng kiến và ứng dụng khoa học công nghệ."
+    title: "Đổi mới phương pháp giảng dạy",
+    description: "Tổ chức hội thi giảng viên, giáo viên và các hoạt động bồi dưỡng chuyên môn, góp phần nâng cao chất lượng dạy học."
   },
   {
     title: "Thành tích trong xây dựng chính quy",
-    description: "Dữ liệu placeholder về nền nếp chính quy, quản lý, rèn luyện và xây dựng đơn vị."
+    description: "Tăng cường rèn luyện nền nếp, kỷ luật, kiểm tra nội vụ, xây dựng tác phong chính quy trong cán bộ, học viên, sinh viên."
   },
   {
-    title: "Thành tích trong phong trào thi đua",
-    description: "Dữ liệu placeholder về các phong trào thi đua, hoạt động tập thể và nhiệm vụ trọng tâm."
+    title: "Hoạt động thi đua, tuyên truyền",
+    description: "Triển khai hội thi báo cáo viên, các hoạt động chính trị, giáo dục truyền thống và phong trào thi đua trong Nhà trường."
   },
   {
-    title: "Dấu ấn trong chuyển đổi số",
-    description: "Dữ liệu placeholder về số hóa tư liệu, đổi mới quản trị và ứng dụng nền tảng số."
+    title: "Hoạt động cộng đồng và tuyển sinh",
+    description: "Tổ chức các hoạt động vì cộng đồng, truyền thông tuyển sinh và giới thiệu các ngành đào tạo phục vụ xã hội, quốc phòng."
+  }
+];
+
+// Cac hoat dong qua hinh anh. Chi gan anh voi noi dung khop truc tiep de tranh sai ngu canh.
+const recentActivities = [
+  {
+    date: "Tháng 6/2025",
+    title: "Lễ khai giảng lớp nhân viên quân y đại đội khóa 42",
+    description: "Đồng chí Hiệu trưởng Nhà trường đọc diễn văn tại Lễ khai giảng lớp nhân viên quân y đại đội khóa 42.",
+    image: "assets/images/gallery-qy2-02.jpg",
+    imageNote: "Đồng chí Hiệu trưởng đọc diễn văn tại lễ khai giảng",
+    sourceLabel: "Ảnh người dùng cung cấp"
+  },
+  {
+    date: "Tư liệu đào tạo",
+    title: "Tập huấn, bồi dưỡng chuyên môn giảng dạy",
+    description: "Giáo viên Nhà trường tham dự tập huấn biên soạn câu hỏi trắc nghiệm khách quan, phục vụ đổi mới phương pháp dạy học.",
+    image: "assets/images/gallery-qy2-03.jpg",
+    imageNote: "Lớp tập huấn chuyên môn cho giáo viên",
+    sourceLabel: "Sách ảnh 1977 - 2017"
+  },
+  {
+    date: "Tư liệu đào tạo",
+    title: "Giờ học môn thực vật tại vườn thuốc nam",
+    description: "Học viên học tập, quan sát thực tế tại vườn thuốc nam của Nhà trường, gắn lý thuyết với thực hành chuyên môn.",
+    image: "assets/images/gallery-qy2-04.jpg",
+    imageNote: "Giờ học môn thực vật tại vườn thuốc nam",
+    sourceLabel: "Sách ảnh 1977 - 2017"
+  },
+  {
+    date: "Tư liệu thực hành",
+    title: "Hướng dẫn thực hành môn châm cứu",
+    description: "Giảng viên hướng dẫn học viên thao tác thực hành môn châm cứu tại Khoa Y học cổ truyền.",
+    image: "assets/images/gallery-qy2-05.jpg",
+    imageNote: "Hướng dẫn thực hành môn châm cứu",
+    sourceLabel: "Sách ảnh 1977 - 2017"
+  },
+  {
+    date: "Tư liệu thực hành",
+    title: "Thi thực hành “5 Kỹ thuật cấp cứu”",
+    description: "Học viên thực hiện phần thi “5 Kỹ thuật cấp cứu” trong kỳ thi tốt nghiệp, rèn luyện năng lực xử trí tình huống chuyên môn.",
+    image: "assets/images/gallery-qy2-06.jpg",
+    imageNote: "Học viên thực hành kỹ thuật cấp cứu",
+    sourceLabel: "Sách ảnh 1977 - 2017"
+  },
+  {
+    date: "Tư liệu rèn luyện",
+    title: "Kiểm tra nội vụ vệ sinh",
+    description: "Học viên Nhà trường thực hiện chế độ kiểm tra nội vụ vệ sinh, góp phần xây dựng nền nếp chính quy, kỷ luật.",
+    image: "assets/images/gallery-qy2-08.jpg",
+    imageNote: "Học viên kiểm tra nội vụ vệ sinh",
+    sourceLabel: "Sách ảnh 1977 - 2017"
+  },
+  {
+    date: "Tư liệu hậu cần",
+    title: "Tham quan nhà ăn mới được xây dựng",
+    description: "Cán bộ Nhà trường tham quan nhà ăn mới, thể hiện sự quan tâm xây dựng cơ sở vật chất, bảo đảm đời sống và nhiệm vụ hậu cần.",
+    image: "assets/images/gallery-qy2-09.jpg",
+    imageNote: "Cán bộ tham quan nhà ăn mới",
+    sourceLabel: "Sách ảnh 1977 - 2017"
   }
 ];
 
@@ -107,6 +167,7 @@ const navLinks = document.querySelectorAll(".main-nav a");
 const museumLinks = document.querySelectorAll(".museum-link");
 const timelineRoot = document.querySelector("#timeline");
 const achievementGrid = document.querySelector("#achievementGrid");
+const activityGrid = document.querySelector("#activityGrid");
 const galleryGrid = document.querySelector("#galleryGrid");
 const imageModal = document.querySelector("#imageModal");
 const modalImage = document.querySelector("#modalImage");
@@ -153,6 +214,22 @@ function renderAchievements() {
       <article class="achievement-card">
         <h3>${item.title}</h3>
         <p>${item.description}</p>
+      </article>
+    `)
+    .join("");
+}
+
+function renderActivities() {
+  activityGrid.innerHTML = recentActivities
+    .map((item) => `
+      <article class="activity-card">
+        <img src="${item.image}" alt="${item.imageNote}">
+        <div class="activity-content">
+          <span class="activity-date">${item.date}</span>
+          <h3>${item.title}</h3>
+          <p>${item.description}</p>
+          ${item.source ? `<a href="${item.source}" target="_blank" rel="noopener">Xem nguồn</a>` : `<span class="activity-source">${item.sourceLabel}</span>`}
+        </div>
       </article>
     `)
     .join("");
@@ -251,4 +328,5 @@ sectionIds.forEach((id) => {
 
 renderTimeline();
 renderAchievements();
+renderActivities();
 renderGallery();
