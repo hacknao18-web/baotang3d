@@ -1,6 +1,6 @@
 // ===================== DU LIEU DE CHINH SUA =====================
 // Thay link bao tang 3D chinh thuc tai dong ben duoi.
-const museum3DLink = "https://example.com/bao-tang-3d";
+const museum3DLink = "https://metasteps.com/viewer/2d87ea05-bd7c-48cc-a68a-58e36258e87a";
 
 // Cac moc lich su duoc tom tat tu tai lieu "Tom tat lich su truong Cao dang Hau can 2".
 const historyTimeline = [

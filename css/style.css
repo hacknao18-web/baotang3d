@@ -653,6 +653,22 @@ a {
   font-weight: 800;
 }
 
+.source-list {
+  padding: 0 0 26px;
+}
+
+.source-list h3 {
+  margin: 0 0 10px;
+  color: var(--gold);
+}
+
+.source-list p {
+  margin: 6px 0;
+  max-width: 980px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 14px;
+}
+
 .footer-bottom {
   display: flex;
   align-items: center;
