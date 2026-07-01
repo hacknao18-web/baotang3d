@@ -1,0 +1,11 @@
+Readiness: TOT
+Workspace: C:\Users\NCPC\Desktop\SK2026\Web
+Python: C:\Users\NCPC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe
+stdout encoding: utf-8
+filesystem encoding: utf-8
+PYTHONIOENCODING: utf-8
+PYTHONUTF8: 1
+python-docx: True
+lxml: True
+pywin32: False
+soffice: C:\Program Files\LibreOffice\program\soffice.exe
