@@ -60,16 +60,44 @@ const achievements = [
   }
 ];
 
-// Thay duong dan anh bang anh that trong assets/images.
+// Anh tu lieu trich tu sach anh "Truong Trung cap Quan y 2 - 40 nam xay dung va truong thanh (1977 - 2017)".
 const galleryImages = [
-  { src: "assets/images/gallery-01.png", caption: "Toàn cảnh Nhà trường" },
-  { src: "assets/images/gallery-02.png", caption: "Hoạt động giảng dạy" },
-  { src: "assets/images/gallery-03.png", caption: "Hoạt động học tập, rèn luyện" },
-  { src: "assets/images/gallery-04.png", caption: "Hoạt động nghiên cứu khoa học" },
-  { src: "assets/images/gallery-05.png", caption: "Hoạt động giáo dục truyền thống" },
-  { src: "assets/images/gallery-06.png", caption: "Hoạt động chuyển đổi số" },
-  { src: "assets/images/gallery-07.png", caption: "Sinh hoạt chính quy" },
-  { src: "assets/images/gallery-08.png", caption: "Dấu ấn tiêu biểu" }
+  {
+    src: "assets/images/gallery-qy2-01.jpg",
+    caption: "Toàn cảnh khu nhà chỉ huy và các phòng chức năng được khánh thành, đưa vào sử dụng năm 2010."
+  },
+  {
+    src: "assets/images/gallery-qy2-02.jpg",
+    caption: "Đồng chí Hiệu trưởng Nhà trường đọc diễn văn tại Lễ khai giảng lớp nhân viên quân y đại đội khóa 42."
+  },
+  {
+    src: "assets/images/gallery-qy2-03.jpg",
+    caption: "Giáo viên Nhà trường tham dự tập huấn biên soạn câu hỏi trắc nghiệm khách quan năm 2014."
+  },
+  {
+    src: "assets/images/gallery-qy2-04.jpg",
+    caption: "Giờ học môn thực vật tại vườn thuốc nam Nhà trường."
+  },
+  {
+    src: "assets/images/gallery-qy2-05.jpg",
+    caption: "Hướng dẫn thực hành môn châm cứu tại Khoa Y học cổ truyền."
+  },
+  {
+    src: "assets/images/gallery-qy2-06.jpg",
+    caption: "Học viên thực hiện phần thi “5 Kỹ thuật cấp cứu” trong kỳ thi tốt nghiệp."
+  },
+  {
+    src: "assets/images/gallery-qy2-07.jpg",
+    caption: "Nhà trường nhận bằng khen của Thủ tướng Chính phủ năm 2007."
+  },
+  {
+    src: "assets/images/gallery-qy2-08.jpg",
+    caption: "Học viên Nhà trường thực hiện chế độ kiểm tra nội vụ vệ sinh."
+  },
+  {
+    src: "assets/images/gallery-qy2-09.jpg",
+    caption: "Cán bộ Nhà trường tham quan nhà ăn mới được xây dựng."
+  }
 ];
 // ================================================================
 
